@@ -1,0 +1,13 @@
+[Unit]
+Description=Virtual-RPG Service
+
+[Service]
+Type=simple
+User=root
+Group=root
+Umask=022
+ExecStart=%S
+ExecStop=%E
+
+[Install]
+WantedBy=graphical.target
